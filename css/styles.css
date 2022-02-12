@@ -26,12 +26,11 @@ body {
 }
 
 header {
-    background: #F5F4FA;
+    background: #FFFFFF;
 }
 button {
     font-family: Roboto, sans-serif;
 }
-
 ul {
     list-style: none;
     margin: 0;
@@ -116,7 +115,8 @@ margin-right: 93px;
 /* contacts header */
 .contacts-header .link {
     color: var(--primary-text-color);
-    text-decoration: none; 
+    text-decoration: none;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
 }
@@ -129,6 +129,7 @@ margin-right: 93px;
 .contacts-header .item+ .item {
     margin-left: 50px;
 }
+
 /* hero styles */
 .hero {
     background : #2F303A;
@@ -204,10 +205,14 @@ margin-right: 93px;
     justify-content: space-between;
 }
 
+/*our business*/
+.container.business {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .business .list .item {
     width: calc(100%/3);
     margin-right: 30px;
-    padding-top: 50px;
 }
 .business .list .item:nth-child(4n) {
     margin-right: 0;    
@@ -218,12 +223,19 @@ display: flex;
 flex-direction: row;
 }
 
+/* our team*/
+.container.team {
+    padding-top: 50px;
+    padding-bottom: 94px;
+}
 .team .horisontal .item {
     width: calc(100%/4);
     margin-right: 30px;
-    padding-top: 50px;
+    padding-top: 0;
 }
-
+.team .horisontal .item:nth-last-child(1) {
+    margin-right: 0;
+}
 .section,
 .our-team-section {
     color: var(--primary-text-color);
@@ -240,7 +252,8 @@ flex-direction: row;
     font-size: 16px;
     line-height: 1.19;
 }
-.card-description .section-title {    
+.card-description .section-title {   
+    margin: 0;
     padding: 30px 0 0 0;
     text-align: center;
 }
@@ -248,10 +261,8 @@ flex-direction: row;
     padding: 10px 0 30px 0;
     text-align: center;
 }
-.card-description {
-    margin-bottom: 94px;
-}
-.down-side .container {
+
+.down-side {
     padding: 60px 0 60px 0;
 }
 /* logo footer */
@@ -306,6 +317,10 @@ flex-direction: row;
     margin: -1px;
 }
 /* portfolio filter buttons */
+.projects .filter {
+    padding-top: 94px;
+    padding-bottom: 20px;
+}
 .filter-button {
     display: inline-block;
     background: #F5F4FA;
@@ -327,10 +342,13 @@ flex-direction: row;
 .container .filter {
     display: flex;
     justify-content: center;
-    margin: 94px auto 20px auto;
+}
+.filter {
+    padding: 94px auto 50px auto;
 }
 .container .filter .item {
     margin-right: 8px;
+    margin-top: 94;
 }
 .container .filter .item:nth-last-child(1) {
     margin-right: 0;
@@ -349,16 +367,15 @@ flex-direction: row;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
-    margin-bottom: 4px;
 }
 .specification {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .specification .item {
     margin-right: 30px;
+    margin-top: 30px;
 }
 .specification .item:nth-child(3n) {
     margin-right: 0;
@@ -367,11 +384,12 @@ flex-direction: row;
     width: 370px;
 }
 .card-specification .section-title {
-    padding: 20px 0 0 24px;
+
+    padding: 20px 0 4px 24px;
     text-align: start;
 }
 .card-specification .text {
-    padding: 4px 0 20px 24px;
+    padding: 0 0 20px 24px;
     text-align: start;
 }
 .container .specification {
