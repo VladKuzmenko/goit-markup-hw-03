@@ -208,7 +208,7 @@ margin-right: 93px;
 /*our business*/
 .container.business {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 94px;
 }
 .business .list .item {
     width: calc(100%/3);
@@ -224,6 +224,9 @@ flex-direction: row;
 }
 
 /* our team*/
+.our-team-section .section-title-h2 {
+    padding-top: 94px;
+}
 .container.team {
     padding-top: 50px;
     padding-bottom: 94px;
@@ -249,17 +252,19 @@ flex-direction: row;
     font-weight: 400;
 }
 .team .section-title {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
-.card-description .section-title {   
-    margin: 0;
-    padding: 30px 0 0 0;
+.card-description {
+    padding: 30px 0 30px 0;
     text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
+
 .card-description .text {
-    padding: 10px 0 30px 0;
-    text-align: center;
+    padding: 10px 0 0 0;
 }
 
 .down-side {
@@ -344,7 +349,7 @@ flex-direction: row;
     justify-content: center;
 }
 .filter {
-    padding: 94px auto 50px auto;
+    padding: 94px auto 16px auto;
 }
 .container .filter .item {
     margin-right: 8px;
@@ -371,7 +376,6 @@ flex-direction: row;
 .specification {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
 }
 .specification .item {
     margin-right: 30px;
