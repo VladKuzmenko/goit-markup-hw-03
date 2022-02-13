@@ -206,8 +206,10 @@ margin-right: 93px;
 }
 
 /*our business*/
+.section-title-h2.business {
+margin-bottom: 50px;
+}
 .container.business {
-    padding-top: 50px;
     padding-bottom: 94px;
 }
 .business .list .item {
@@ -224,13 +226,14 @@ flex-direction: row;
 }
 
 /* our team*/
-.our-team-section .section-title-h2 {
+.our-team-section {
     padding-top: 94px;
-}
-.container.team {
-    padding-top: 50px;
     padding-bottom: 94px;
 }
+.our-team-section .section-title-h2 {
+margin-bottom: 50px;
+}
+
 .team .horisontal .item {
     width: calc(100%/4);
     margin-right: 30px;
@@ -322,9 +325,12 @@ flex-direction: row;
     margin: -1px;
 }
 /* portfolio filter buttons */
-.projects .filter {
+.projects {
     padding-top: 94px;
-    padding-bottom: 20px;
+    padding-bottom: 94px;
+}
+.navigation {
+    margin-bottom: 50px;
 }
 .filter-button {
     display: inline-block;
@@ -361,12 +367,8 @@ flex-direction: row;
 
 .specification .text {
     font-size: 16px;
-    line-height: 1.88px;
+    line-height: 1.88;
     font-weight: 400;
-}
-.specification p {
-    margin-bottom: 0px;
-    padding-bottom: 20px;
 }
 .specification .section-title {
     font-size: 18px;
@@ -381,6 +383,9 @@ flex-direction: row;
     margin-right: 30px;
     margin-top: 30px;
 }
+.specification .item:nth-child(-n+3) {
+margin-top: 0;
+}
 .specification .item:nth-child(3n) {
     margin-right: 0;
 }
@@ -388,17 +393,12 @@ flex-direction: row;
     width: 370px;
 }
 .card-specification .section-title {
-
-    padding: 20px 0 4px 24px;
     text-align: start;
 }
-.card-specification .text {
-    padding: 0 0 20px 24px;
+.card-specification .text {  
     text-align: start;
-}
-.container .specification {
-    margin-bottom: 94px;
 }
 .card-specification {
+    padding: 20px 0 20px 24px;
     border: 1px solid #EEEEEE;
 }
